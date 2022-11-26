@@ -134,11 +134,18 @@ function buildCharts(sample) {
   }];
     // 9. Create the layout for the bar chart.
     var barLayout = {
-      title: {font: { size: 20,
-                      family: "Sans-Serif"},
+      title: {
+              font: { 
+                  size: 20,
+                  family: "Sans-Serif"
+                },
               text: "<b>Top 10 Bacterial Cultures Found</b>"},
-      xaxis: {title: ""},
-      yaxis: {title: ""},
+      xaxis: {
+        title: ""
+      },
+      yaxis: {
+        title: ""
+      },
       hovermode: 'closest',
       xaxis: {
         showgrid: false
@@ -166,12 +173,17 @@ function buildCharts(sample) {
     
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
-      title: {font: { size: 20,
-                      family: "Sans-Serif"},
+      title: {font: { 
+              size: 20,
+              family: "Sans-Serif"
+            },
               text: "<b>Bacteria Cultures Per Sample</b>"},
-      xaxis: {title: "OTU ID"},
       hovermode: "closest",
       xaxis: {
+        title: {font: { 
+               family: "Sans-Serif"
+            },
+        text:"OTU ID"},
         showgrid: false
       },
       yaxis: {
