@@ -1,3 +1,3 @@
-# BellyButtonBiodiversity
+# Belly Button Biodiversity
 
-deployed project URL: https://arminekhanan.github.io/BellyButtonBiodiversity/
+Deployed project URL: https://arminekhanan.github.io/BellyButtonBiodiversity/
