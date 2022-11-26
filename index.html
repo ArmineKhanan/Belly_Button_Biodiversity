@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family:Sans-Serif">Bellybutton Biodiversity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
+</head>
+<body>
+    <div class="container" >
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center"; style="background-color: #e8eaf6">
+            <h1 style="font-family:Sans-Serif; color: #607d8b">Belly Button Biodiversity Dashboard</h1>
+            <p style="font-family:Sans-Serif; color: #607d8b">Use the interactive charts below to explore the dataset</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="well">
+              <h5 style="font-family:Sans-Serif">Test Subject ID No.:</h5>
+              <!-- <select id="selDataset"></select> -->
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+            <div class="panel panel-primary" style="color: #607d8b">
+              <div class="panel-heading">
+                <h3 class="panel-title" style="font-family:Sans-Serif">Demographic Info</h3>
+              </div>
+              <div id="sample-metadata" class="panel-body"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="bar"></div>
+            <script src="charts.js"></script>
+          </div>
+          <div class="col-md-4">
+            <div class="row-md-10">
+
+            </div>
+            <div id="gauge"></div>
+            <script src="charts.js"></script>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="bubble"></div>
+            <script src="charts.js"></script>
+          </div>
+        </div>
+      </div>
+
+      <script src="samples.json"></script>
+      <script src="charts.js"></script>
+      <!--<script src="BellyButton_bubble_chart_starter_code.js"></script>-->
+      <!--<script src="BellyButton_gauge_starter_code.js"></script>-->
+    
+</body>
+</html>
